@@ -52,6 +52,7 @@ int main(void) {
 
     return 0;
 }
+
 # 2) Compile Command Used
 
 riscv64-unknown-elf-gcc -O2 -Wall -march=rv64imac -mabi=lp64 \
