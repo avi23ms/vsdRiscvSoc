@@ -67,5 +67,11 @@ unique_test.c -o unique_test
 
 
 # 3) The program output from spike pk ./unique_test 
+To get output,
+```c
+spike /home/avinash/riscv_toolchain/riscv-pk/build/pk ./unique_test
+
+```
+The Output:
 <img width="1920" height="1200" alt="task1_output" src="https://github.com/user-attachments/assets/6063cf8c-cbe1-4128-8a00-10395ce49b57" />
 
