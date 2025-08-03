@@ -5,9 +5,12 @@
 Successfully installed and configured the RISC-V toolchain in Ubuntu, built and verified Spike (the RISC-V ISA simulator), installed the Proxy Kernel, and (optionally) built Icarus Verilog. Finally, compiled and run a unique RISC-V C program that printed a user/machine-specific 64-bit hash.
 # 1) Source file unique_test.c
 Created using:
+```c
 nano unique_test.c
+```
+
 # Full code
-cat << 'EOF' >> README.md
+
 ```c
 #include <stdint.h>
 #include <stdio.h>
@@ -54,12 +57,14 @@ int main(void) {
 
     return 0;
 }
-
-# 2) Compile Command Used
-
+```
+# 2) Compile Command Used:
+```c
 riscv64-unknown-elf-gcc -O2 -Wall -march=rv64imac -mabi=lp64 \
 -DUSERNAME="\"$(id -un)\"" -DHOSTNAME="\"$(hostname -s)\"" \
 unique_test.c -o unique_test
+```
+
 
 # 3) The program output from spike pk ./unique_test 
 <img width="1920" height="1200" alt="task1_output" src="https://github.com/user-attachments/assets/6063cf8c-cbe1-4128-8a00-10395ce49b57" />
