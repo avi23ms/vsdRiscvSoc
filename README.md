@@ -7,6 +7,8 @@ Successfully installed and configured the RISC-V toolchain in Ubuntu, built and 
 Created using:
 nano unique_test.c
 # Full code
+cat << 'EOF' >> README.md
+```c
 #include <stdint.h>
 #include <stdio.h>
 
